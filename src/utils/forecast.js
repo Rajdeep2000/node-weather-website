@@ -18,6 +18,8 @@ const forecast = (lat, long, callback, unit = "m") => {
           temperature: body.current.temperature,
           precip: body.current.precip,
           feelslike: body.current.feelslike,
+          humidity: body.current.humidity,
+          icon: body.current.weather_icons[0],
           isDay: body.current.is_day,
         });
       }
